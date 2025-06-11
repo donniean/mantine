@@ -1,0 +1,3 @@
+.wrapper {
+  --input-height-xs: calc(2rem * var(--mantine-scale));
+}

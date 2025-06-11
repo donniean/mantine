@@ -1,4 +1,26 @@
-import { createTheme } from '@mantine/core';
+import {
+  Autocomplete,
+  Button,
+  ColorInput,
+  Combobox,
+  createTheme,
+  FileInput,
+  Input,
+  MultiSelect,
+  NativeSelect,
+  NumberInput,
+  PasswordInput,
+  PillsInput,
+  Select,
+  TagsInput,
+  TextInput,
+} from '@mantine/core';
+import buttonClassNames from './theme.button.module.css';
+import inputClassNames from './theme.input.module.css';
+
+const xsInput = {
+  defaultProps: { size: 'xs' },
+} as const;
 
 export const theme = createTheme({
   colors: {
@@ -172,4 +194,27 @@ export const theme = createTheme({
     ],
   },
   primaryColor: 'green',
+  defaultRadius: 'xs',
+  components: {
+    Button: Button.extend({
+      classNames: buttonClassNames,
+      ...xsInput,
+    }),
+    Input: Input.extend({
+      classNames: inputClassNames,
+      ...xsInput,
+    }),
+    ColorInput: ColorInput.extend(xsInput),
+    FileInput: FileInput.extend(xsInput),
+    NativeSelect: NativeSelect.extend(xsInput),
+    NumberInput: NumberInput.extend(xsInput),
+    PasswordInput: PasswordInput.extend(xsInput),
+    TextInput: TextInput.extend(xsInput),
+    Autocomplete: Autocomplete.extend(xsInput),
+    Combobox: Combobox.extend(xsInput),
+    MultiSelect: MultiSelect.extend(xsInput),
+    PillsInput: PillsInput.extend(xsInput),
+    Select: Select.extend(xsInput),
+    TagsInput: TagsInput.extend(xsInput),
+  },
 });

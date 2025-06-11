@@ -1,0 +1,3 @@
+.root {
+  --button-height-xs: calc(2rem * var(--mantine-scale));
+}
