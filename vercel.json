@@ -1,5 +1,4 @@
 {
-  "rootDirectory": "./",
   "buildCommand": "npm run setup && npm run build all && npm run docs:build",
   "outputDirectory": "apps/mantine.dev/out"
 }
