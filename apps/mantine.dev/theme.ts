@@ -16,8 +16,8 @@ import {
   TextInput,
 } from '@mantine/core';
 
-import buttonClassNames from './mantine.theme.button.module.css';
-import inputClassNames from './mantine.theme.input.module.css';
+import buttonClassNames from './theme.button.module.css';
+import inputClassNames from './theme.input.module.css';
 
 const xsInput = {
   defaultProps: { size: 'xs' },
