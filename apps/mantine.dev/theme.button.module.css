@@ -1,3 +1,5 @@
 .root {
   --button-height-xs: calc(2rem * var(--mantine-scale));
+
+  min-width: 72px;
 }
